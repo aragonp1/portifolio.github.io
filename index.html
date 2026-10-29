@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Alisson Aragão · Desenvolvedor Full Stack</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div id="pl">
+    <div class="pc">
+      <div class="pt"><span id="pn">0</span><em>%</em></div>
+      <div id="pbw"><i id="pb"></i></div>
+      <small>$ git clone aragonp1/portfolio</small>
+    </div>
+  </div>
+
+  <canvas id="bg"></canvas>
+  <canvas id="fx"></canvas>
+  <div id="cd"></div>
+  <div id="cr"><b></b></div>
+  <div id="glow"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="rail"><i id="fill"></i></div>
+
+  <header>
+    <a class="logo" href="#top">~/alisson<span class="cur">_</span></a>
+    <nav>
+      <a href="#sobre">sobre</a>
+      <a href="#projetos">projetos</a>
+      <a href="#trajetoria">trajetória</a>
+      <a href="#contato">contato</a>
+      <button id="theme" aria-label="Alternar tema">◐</button>
+      <button id="lang" aria-label="Language">EN</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="hi rv in">&gt; olá, mundo. eu sou</div>
+      <h1 class="grad">Alisson<br>Aragão</h1>
+      <div class="role"><span id="role"></span><span class="cur">▌</span></div>
+      <p class="lead">Desenvolvedor Web e Bacharel em Ciência da Computação. Construo aplicações modernas com React, TypeScript, Tailwind CSS e Firebase, sempre de olho em UX e performance.</p>
+      <div class="btns">
+        <a class="btn p" href="#projetos">ver projetos</a>
+        <a class="btn" href="#contato">contato</a>
+      </div>
+    </div>
+    <div class="term">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <p style="--i:0">$ git log --author="aragonp1" --oneline</p>
+      <p style="--i:1"><b>a1f3c9e</b> <em>feat:</em> Bacharelado em Ciência da Computação</p>
+      <p style="--i:2"><b>7bd02e4</b> <em>feat:</em> Catálogo digital com pedido no WhatsApp</p>
+      <p style="--i:3"><b>c94e1a7</b> <em>feat:</em> Dashboard Financeiro Pro</p>
+      <p style="--i:4"><b>HEAD → main</b> aberto a freelas ✦</p>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2 class="sec"><code>3e8a21b</code>feat: sobre mim</h2>
+    <p class="about rv">Mexo com computador desde pequeno e acompanho de perto a evolução da tecnologia. Hoje meu foco é <strong>React, TypeScript e Tailwind CSS</strong>. Também tenho histórico no ensino de informática e na resolução de problemas práticos de hardware e sistemas. Fora do código: videogames, séries e filmes.</p>
+    <div class="stats">
+      <div class="stat rv"><b id="nrep" data-n="9">0</b><span>repositórios públicos</span></div>
+      <div class="stat rv" style="--d:.1s"><b data-n="5">0</b><span>certificações</span></div>
+      <div class="stat rv" style="--d:.2s"><b data-n="1">0</b><span>bacharelado concluído</span></div>
+    </div>
+    <div class="mq"><div id="m1"></div></div>
+    <div class="mq r"><div id="m2"></div></div>
+  </section>
+
+  <section id="projetos">
+    <h2 class="sec"><code>b52fd90</code>feat: projetos</h2>
+    <div class="fl" id="fl"></div>
+    <div id="grid"></div>
+  </section>
+
+  <section id="atividade">
+    <h2 class="sec"><code>2b7c4de</code>feat: atividade no GitHub</h2>
+    <div class="gw rv">
+      <div id="gr"></div>
+      <div class="gf">
+        <span id="gcap"></span>
+        <span class="lg">menos<i class="g0"></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g4"></i>mais</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="terminal">
+    <h2 class="sec"><code>5d1e9f0</code>feat: terminal</h2>
+    <p class="about rv" style="margin-top:0">Curioso? Abra o terminal e digite <code>help</code>. Tem ovo de páscoa escondido.</p>
+    <div class="tw rv">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div id="out"></div>
+      <form id="tf">
+        <span>$</span>
+        <input id="ti" autocomplete="off" spellcheck="false" aria-label="terminal">
+      </form>
+    </div>
+  </section>
+
+  <section id="trajetoria">
+    <h2 class="sec"><code>9c07e3a</code>chore: trajetória</h2>
+    <div class="tl">
+      <div class="ti rv"><time>nov 2024 → atual</time><h3>Assistente educacional</h3><p>Fundação Demócrito Rocha · Fortaleza</p></div>
+      <div class="ti rv"><time>jan 2021 → nov 2025</time><h3>Bacharelado em Ciência da Computação</h3><p>Estácio</p></div>
+      <div class="ti rv"><time>out → nov 2023</time><h3>Assistente administrativo</h3><p>AGC Fitness</p></div>
+      <div class="ti rv"><time>fev → nov 2021</time><h3>Professor de informática</h3><p>Curso Professor Airley</p></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2 class="sec"><code>0d71c5e</code>feat: contato</h2>
+    <div class="cg">
+      <div class="rv">
+        <p class="about" style="margin-top:0">Precisa de uma landing page, dashboard, sistema web ou catálogo digital? Conte sua ideia: o formulário monta a mensagem e abre direto no meu WhatsApp.</p>
+        <div class="ct">
+          <a class="btn" href="mailto:alissonaragao000@gmail.com">e-mail</a>
+          <a class="btn" href="https://www.linkedin.com/in/alissonaragao" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/aragonp1" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <form id="cf" class="rv" style="--d:.15s">
+        <label>Nome<input name="nome" required maxlength="60" autocomplete="name"></label>
+        <label>E-mail<input name="email" type="email" required maxlength="80" autocomplete="email"></label>
+        <label>Assunto
+          <select name="assunto">
+            <option>Oportunidade profissional</option>
+            <option>Novo projeto</option>
+            <option>Freelance / colaboração</option>
+            <option>Networking</option>
+            <option>Outro assunto</option>
+          </select>
+        </label>
+        <label>Mensagem<textarea name="msg" required rows="5" maxlength="800"></textarea></label>
+        <button class="btn p" type="submit">Enviar pelo WhatsApp ↗</button>
+        <p id="cst"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>© 2026 Alisson Aragão · feito com HTML5, CSS3 e JavaScript</footer>
+  <div id="hud"><span class="br">⎇ main</span><span><b id="cnt">0</b> commits</span><span id="hint">clique ou toque em qualquer lugar para commitar</span></div>
+
+  <!-- Config do Firebase -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
+    import { getAuth, signInAnonymously } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
+    import { getFirestore, collection, doc, setDoc, onSnapshot } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
+    
+    const app = initializeApp({
+      apiKey: 'COLE_AQUI',
+      authDomain: 'COLE_AQUI',
+      projectId: 'COLE_AQUI',
+      appId: 'COLE_AQUI'
+    });
+    
+    const auth = getAuth(app), fs = getFirestore(app);
+    let login;
+    const uidP = () => login || (login = signInAnonymously(auth).then(c => c.user.uid));
+    
+    window.claude = {
+      use: async n => {
+        if (n === 'user') { const uid = await uidP(); return { id: async () => uid }; }
+        if (n === 'db') {
+          await uidP();
+          return {
+            collection: name => ({
+              onSnapshot: (ok, err) => onSnapshot(collection(fs, name), sn => ok({ docs: sn.docs.map(d => ({ id: d.id, data: () => d.data() })) }), err),
+              doc: id => ({ set: data => setDoc(doc(fs, name, id), data) })
+            })
+          };
+        }
+        return null;
+      }
+    };
+  </script>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
