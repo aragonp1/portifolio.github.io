@@ -213,7 +213,7 @@ const PR = [
   { n: 'fasciculo', d: 'Fascículo digital: um teste de HTML estilizado com CSS.', t: ['HTML', 'CSS'], u: G + 'fasciculo' }
 ];
 
-$('#grid').innerHTML = PR.map((p, i) => `<div class="rv" style="--d:${i * .08}s" data-t="${p.t.join(',')}"><a class="card" href="${p.u}" target="_blank" rel="noopener"><span class="go">↗</span><span class="repo">aragonp1/${p.n}</span><h3>${p.n}</h3><p>${p.d}</p><div class="tags">${p.t.map(t => `<span>${t}</span>`).join('')}</div></a></div>`).join('');
+$('#grid').innerHTML = PR.map((p, i) => `<div class="rv in" style="--d:${i * .08}s" data-t="${p.t.join(',')}"><a class="card" href="${p.u}" target="_blank" rel="noopener"><span class="go">↗</span><span class="repo">aragonp1/${p.n}</span><h3>${p.n}</h3><p>${p.d}</p><div class="tags">${p.t.map(t => `<span>${t}</span>`).join('')}</div></a></div>`).join('');
 $('#fl').innerHTML = ['Todos', 'React', 'TypeScript', 'CSS'].map((f, i) => `<button class="f${i ? '' : ' on'}" data-f="${f}">${f}</button>`).join('');
 
 $('#fl').onclick = e => {
