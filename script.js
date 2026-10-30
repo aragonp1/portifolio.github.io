@@ -374,17 +374,20 @@ function pop(x, y, c) {
 }
 
 function commit(cX, cY) {
+  const t = Date.now();
+  if (t - last < 300) return;
+  last = t;
   const c = { h: hash(who + Math.random() + t), m: L(MSG, MSGE)[Math.random() * MSG.length | 0], a: who, ts: t };
   pop(cX, cY, c);
   burst(cX, cY, 26);
-  mine = [...mine, c].slice(-500);
+  mine = [...mine, c].slice(-100);
   total();
   if (mode === 'local') {
     try { localStorage.setItem(LS, JSON.stringify(mine)); } catch (e) {}
   } else if (ready && !ro) {
     dirty = 1;
     clearTimeout(timer);
-    timer = setTimeout(flush, 0);
+    timer = setTimeout(flush, 700);
   }
 }
 
