@@ -389,11 +389,9 @@ function commit(cX, cY) {
     timer = setTimeout(flush, 700);
   }
 }
-
-addEventListener('click', e => {
-  if (e.target.closest && e.target.closest('a,button,input,textarea,select,label,.tw')) return;
-  commit(e.clientX, e.clientY);
-});
+addEventListener('pointerup',e=>
+  {if(e.button>0)return;if(e.target.closest&&e.target.closest('a,button,input,textarea,select,label,.tw'))
+    return;commit(e.clientX,e.clientY)});
 
 function local() {
   mode = 'local';
