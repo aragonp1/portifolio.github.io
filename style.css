@@ -297,6 +297,7 @@ h1 {
   line-height: 1;
   margin: .15em 0;
   letter-spacing: -.04em;
+  padding: 0.1em 0;
 }
 
 .grad {
